@@ -1,0 +1,421 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+ */
+ 
+ #main{
+
+ }
+ /* Bắt đầu header */
+ #header{
+    height:50px;
+    background-color:#000;
+    /* Để thanh bám dính */
+    position:fixed;
+    top: 0;
+    left: 0;
+    right:0;
+ }
+
+ html{
+    font-family:sans-serif;
+    scroll-behavior: smooth;
+ }
+ #nav{
+  display:inline-block;
+ }
+ #nav .subnav{
+    /* Nhấp vào thì hiện */
+      display: none ; 
+    position:absolute;
+    background-color: #fff;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    min-width: 160px;
+ } 
+ /* Chỉnh sửa biểu tượng */
+ #nav .nav-arrow-down{
+  font-size:14px;
+ }
+ #nav .subnav a{
+color:#000;
+padding: 0 16px;
+ }
+#nav .subnav li:hover{
+   color:#000;
+   background-color: #ccc;
+}
+
+ #nav li a{
+
+    /* Bỏ gạch chân dưới chữ*/
+    text-decoration:none;
+    /* Kích thước cho chữ vào giữa ô */
+    line-height: 50px;
+    /* Khoảng cách 2 bên */
+    padding : 0 20px;
+    /* thay phông màu khi dí vào */
+    display:block;
+    
+ }
+ /* Tác động lên thẻ a bên ngoài không tính thẻ bên trong */
+ /* Tránh chữ màu trắng trên nền màu trắng */
+ #nav > li > a{
+   color:#fff;
+   /* Chữ hoa */
+   text-transform: uppercase;
+
+ }
+ /* Bấm vào mới hiển thị ra ở chỗ more  */
+ #nav li:hover .subnav{
+   display:block;
+
+
+ }
+ /* Chỉ tác động lên thẻ a cấp 1, không bị phụ thuộc  vào hover của thuộc tính cha*/
+ #nav > li:hover > a{
+  empty-cells: show; color:#000;
+   background-color: #ccc;
+ }
+ /*  Ở dưới là có tác động đến thẻ a bên trong */
+ /*  
+ #nav li:hover a{
+    color:#000;
+    background-color: #ccc;
+ }
+ */
+ #nav > li{
+   display:inline-block ;
+ }
+ #nav li{
+   position:relative;
+ }
+ /* Bỏ dấu chấm trước ô trắng */
+ #nav, .subnav{
+   list-style-type: none;
+ }
+ #header .search-btn {
+  float:right;
+  line-height: 50px;
+  padding:0 17px;
+  /* Đổi trỏ chuột để tìm kiếm */
+  cursor:pointer;
+ }
+ /* Đổi màu khi nhấn vào thanh tìm kiếm */
+ #header .search-btn:hover{
+  background-color:red;
+ }
+ #header .search-icon{
+  color:#fff;
+  font-size: 20px;
+ 
+ }
+ /* Bắt đầu phần slider */
+ #slider{
+  margin-top:40px;
+  /* 100 chiều ngang của chính nó */
+  padding-top:53%;
+  width:100%;
+  background:url('/jmg/pan.png') center top /cover no-repeat;
+}
+/* căn chỉnh tên fuji */
+.clear{
+  clear:both;
+  }
+#content .content-section{
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:70px 0 112px;
+}
+#content .section-heading{
+  text-align:center;
+  font-size:30px;
+  letter-spacing: 1px ;
+  margin-bottom: 30px;
+}
+#content .section-sub-heading{
+font-size: 15px;
+text-align: center;
+margin-top:25px;
+font-style: italic;
+/* do trong suot mờ đi */
+opacity: 0.6;
+}
+#content .about-text{
+  margin-top:25px;
+font-size:16px;
+/* Căn đều 2 bên */
+text-align:justify;
+/* độ cao của 1 dòng */
+line-height:1.4;
+}
+#content .album-list{
+  margin:48px;
+}
+#content .album-name{
+  font-size:15px;
+}
+#content .member-ing{
+  margin-top:15px;
+  width:160px;
+  /* Tạo bo góc ảnh */
+  border-radius: 5px;
+}
+#content .album-item{
+  float:left;
+  width:50%;
+  text-align:center;
+}
+/* Tour section*/
+/* tat ca cac chu trong doan la mau trang */
+.text-white{
+  color:#fff !important;
+}
+.tour-section{
+  background-color: black;
+}
+.ticket-list{
+  background-color: #fff;
+  margin-top: 40px;
+}
+.ticket-list .li{
+  font-size: 15px;
+  padding: 4px 16px;
+  /* Thêm đường gạch dưới */
+  border-bottom: 1px solid #ddd;
+  color:#757575;
+}
+.ticket-list .sold-out{
+background-color: #f44336;
+color:#fff;
+padding:3px 4px;
+margin-left:16px;
+}
+.ticket-list .quantity{
+  float:right;
+  width:24px;
+  height:24px;
+  background-color: #000;
+  color:#fff;
+  border-radius: 60%;
+  text-align: center;
+  line-height: 24px;
+  margin-top: -3px;
+}
+/* places */
+.place-list{
+  margin-top:32px;
+  margin-left: -8px;
+    margin-right: -8px;
+    margin:32px -8px 0;
+    padding-bottom:48px;
+}
+.place-item{
+  float:left;
+  width:33.33333%;
+  padding: 0 12px;
+
+}
+.place-img{
+  width:100%;
+  display:block;
+}
+/* Tro vào chuột để mờ ảnh */
+.place-img:hover{
+  opacity:0.6;
+}
+.place-body{
+  background-color: #fff;
+  padding:16px;
+  font-size:15px;
+}
+.place-heading{
+  font-size:15px;
+  font-weight:600;
+}
+.place-time{
+  margin-top:15px;
+  color:#757575;
+}
+.place-desc{
+  margin-top:15px;
+  line-height:1.4;
+}
+.btn {
+  color:#fff;
+  background-color:#000;
+  text-decoration: none;
+  padding:11px 16px;
+  display:inline-block;
+  margin-top:18px ;
+  border:none;
+}
+.btn:hover{
+  color:#000;
+  background-color:#ccc;
+  cursor:pointer;
+}
+.pull-right{
+  float:right !important
+}
+.modal{ 
+  /* Đã sát trình duyệt*/
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  /* Làm mờ khi ấn lên */
+  background:rgba(0,0,0,0.4);
+  display:none;
+  /* Nằm giữa chiều dài */
+  align-items: center;
+  /* Nằm giữa chiều ngang*/
+  justify-content: center;
+
+} 
+.modal.open{
+display:flex;
+}
+.modal-container{
+  background:#fff; 
+  width:900px;
+  min-height:200px;
+  max-width:calc(100%-32px) ;
+animation:modalFadeIn ease .5s;
+}
+header.modal-header{
+  position: relative;
+  background: #40bd67;
+  height:130px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  font-size:30px;
+  color:#fff;
+}
+.modal-heading-icon{
+  margin-right:16px;
+}
+.modal-close{
+  position:absolute;
+  top: 0;
+ right:0;
+ color:#fff;
+ padding:12px;
+ /* Bam vao */
+ cursor:pointer;
+ /* Làm mờ */
+ opacity:0.9;
+}
+.modal-body{
+  padding:16px;
+
+}
+.modal-label{
+  display:block;
+  font-size:15px;
+  margin-bottom:12px;
+}
+.modal-input{
+  border:1px solid #ccc;
+  width:100%;
+  padding:10px;
+  font-size:15px; 
+  margin-bottom: 24px;
+}
+#buy-tickets{
+  background: #40bd67;
+border:none;
+color:#fff;
+width:100%;
+font-size :15px;
+text-transform:uppercase;
+padding: 12px;
+cursor:pointer;
+}
+#buy-tickets:hover{
+  opacity:0.9;
+}
+.modal-footer{
+  padding:16px;
+  text-align:right;
+}
+@keyframes modalFadeIn{
+  from{
+   transform:translateY(-100px);
+  }
+  to{
+transform:translateY(0);
+  }
+}
+/* Contact */
+.row{
+  margin-left: -8px;
+  margin-right: -8px;
+ }
+ .row::after{
+  content:"";
+  display:block;
+  clear:both;
+ }
+ .col{
+  float:left;
+  padding-left:8px;
+  padding-right:8px;
+
+ }
+ .col-half{
+  width:50%;
+ }
+ .col-full{
+  width:100%;
+ }
+ #main{
+
+ }
+.contact-info {
+  font-size:15px;
+  line-height: 1.4;
+}
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+.contact-form .form-control{
+  padding:10px;
+  border:1px solid #ccc;
+  width:100%;
+}
+.contact-content{
+  margin:48px;
+}
+.mt-8{
+  margin-top: 8px !important;
+}
+.mt-16{
+  margin-top: 16px !important;
+}
+.map-section img{
+width:100%;
+}
+#footer{
+  padding: 64px 16px;
+  text-align: center;
+  font-size: 24px;
+  
+}
+#footer .socials-list a {
+  color:rgba(0,0,0,0.6);
+  text-decoration: none;
+}\#footer .socials-list a:hover {
+  color:rgba(0,0,0,0.3);
+}
