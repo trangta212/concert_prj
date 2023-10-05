@@ -2,8 +2,8 @@
 
 ## About <a name="about"></a>
 Here is a website where you can easily track schedules, locations, ticket availability, concert times, and even book and pay for tickets within seconds. This website is currently using JavaScript and HTML, CSS languages. The project has been in progress for one month and is still being finalized.
-Project's timeline : 06/09/2023 - 03/10/2023
-Website's techonology features:  
+## Project's timeline : 06/09/2023 - 03/10/2023
+## Website's techonology features:  
 * NODE.JS
 * JAVA
 * PHP
