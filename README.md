@@ -14,7 +14,7 @@ DEMO: [here](http://127.0.0.1:5500/index.html)
 * Clone from Github:https://github.com/trangta212/concert_prj
   
 ## Author <a name="author"></a>
-Website  code is completely written by Ta Thu Trang[git](https://github.com/trangta212)
+Website  code is completely written by Ta Thu Trang [me](https://github.com/trangta212)
 
 ## Contacts <a name="contacts"></a>
 * Gmail: tathutrang212@gmail.com
