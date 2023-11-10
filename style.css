@@ -234,6 +234,8 @@ margin-left:16px;
   background-color: #fff;
   padding:16px;
   font-size:15px;
+  min-height: 300px;
+ position: relative;
 }
 .place-heading{
   font-size:15px;
@@ -264,7 +266,7 @@ margin-left:16px;
 .pull-right{
   float:right !important
 }
-.modal{ 
+.modal1{ 
   /* Đã sát trình duyệt*/
   position:fixed;
   top:0;
@@ -280,7 +282,7 @@ margin-left:16px;
   justify-content: center;
 
 } 
-.modal.open{
+.modal1.open{
 display:flex;
 }
 .modal-container{
@@ -417,3 +419,9 @@ width:100%;
 #footer .socials-list a:hover {
   color:rgba(0,0,0,0.3);
 }
+.btntk{
+  position: absolute;
+  left:16px;
+  bottom: 24px;
+}
+
