@@ -11,9 +11,7 @@
 4. Kiểu dáng
  */
  
- #main{
 
- }
  /* Bắt đầu header */
  #header{
     height:50px;
@@ -379,9 +377,7 @@ transform:translateY(0);
  .col-full{
   width:100%;
  }
- #main{
 
- }
 .contact-info {
   font-size:15px;
   line-height: 1.4;
@@ -407,6 +403,7 @@ transform:translateY(0);
 .map-section img{
 width:100%;
 }
+/*footer section*/
 #footer{
   padding: 64px 16px;
   text-align: center;
@@ -416,6 +413,7 @@ width:100%;
 #footer .socials-list a {
   color:rgba(0,0,0,0.6);
   text-decoration: none;
-}\#footer .socials-list a:hover {
+}
+#footer .socials-list a:hover {
   color:rgba(0,0,0,0.3);
 }
