@@ -8,7 +8,7 @@ Here is a website where you can easily track schedules, locations, ticket availa
 * JAVA
 * PHP
 * PostgreSQL cloud databases
-DEMO: [here](http://127.0.0.1:5500/index.html)
+DEMO: [here](https://trangta212.github.io/concert_prj/)
 
 ## Getting Started <a name="getting-started"></a>
 * Clone from Github:https://github.com/trangta212/concert_prj
